@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button type="button" onclick="sum()">Sum</button>
+    <div id="result"></div>
+
+    <script>
+        function sum(){
+            let a = document.querySelector("#num1").value ;
+            let b = document.querySelector("#num2").value ;
+            if(isNaN(a) || isNaN(b) || a == "" || b == ""){
+                alert("Must input numbers");
+                a = 0;
+                b = 0;
+            }
+            a = Number(a);
+            b = Number(b);
+            let ele = document.querySelector("#result");
+            let result = a + b;
+            ele.innerHTML = "<p>Le résultat est : " + result + "</p>";
+        }
+
+    </script>
+</body>
