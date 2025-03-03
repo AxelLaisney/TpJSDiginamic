@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="modale-view.js"></script>
+    <script src="tp10Formulaire.js"></script>
+    <title>Gestion des utilisateurs</title>
+</head>
+<body onload="GetData()">
+    <form>
+        <input type="hidden" id="idCreateur" name="idCreateur" value="ALaisney">
+        <!-- <input type=hidden id="dateMaj" name="dateMaj" value=""> -->
+
+        <label>Nom</label>
+        <input type="text" id="nom" name="nom"></br>
+
+        <label>prenom</label>    
+        <input type="text" id="prenom" name="prenom"></br>
+
+        <label>genre</label>
+        <input type="text" id="genre" name="genre"></br>
+
+        <label>date de naissance</label>
+        <input type="text" id="dateNaissance" name="dateNaissance"></br>
+
+        <label>lieu de naissance</label>
+        <input type="text" id="lieuNaissance" name="lieuNaissance"></br>
+
+        <label>departement de naissance</label>
+        <input type="text" id="departementNaissance" name="departementNaissance"></br>
+
+        <label>numero de rue</label>
+        <input type="text" id="numeroRue" name="numeroRue"></br>
+
+        <label>libelle</label>
+        <input type="text" id="libelleRue" name="libelleRue"></br>
+
+        <label>code postal</label>
+        <input type="text" id="codePostal" name="codePostal"></br>
+
+        <label>ville</label>
+        <input type="text" id="ville" name="ville"></br>
+        
+        <input type="button" onclick="Soumettre()" value="Soumettre">
+    </form>
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Identifiant</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Lieu de naissance</th>
+                <th>Adresse</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</body>

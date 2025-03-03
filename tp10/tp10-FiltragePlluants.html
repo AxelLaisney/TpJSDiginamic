@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="tp10FiltragePolluant.js"></script>
+</head>
+<body onload="Table()">
+    <form action="tp10-FiltragePlluants.html" method="post">
+        <label>Minimum</label>
+        <input type="text" id="min" name="min">
+        <label>Maximum</label>
+        <input type="text" id="max" name="max">
+        <input type="button" onclick="SubmitForm()" value="Submit">
+    </form>
+    <table style="width: 100%;" id="polTable">
+        <thead>
+            <tr>
+                <th style="width: 10%;"></th>
+                <th style="width: 50%;">Nom</th>
+                <th style="width: 20%;">Valeur</th>
+                <th style="width: 20%;">%</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</body>
